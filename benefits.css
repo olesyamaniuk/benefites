@@ -1,0 +1,299 @@
+/* .section{
+    background-color: rgb(226, 153, 43);
+} */
+
+/* ============== COMMON STYLES ============== */
+::before, ::after{
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+/* .container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+} */
+
+/* .section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* background-color: #1c1d20; */ 
+*/
+
+/* ---------------------------------- */
+
+:root {
+	--background: #1c1d20;
+	--cards: #242527;
+	--arrow: #3b3b3b;
+	--button-text: #ed3b44;
+	--main-text: #fafafa;
+}
+:root {
+  --font-family: "Inter Tight", sans-serif;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    margin: 0 auto;
+  }
+/* ---------------------- */
+.benefits{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  background-color: #1e1823;
+  /* padding-left: 16px; */
+  /* width: 1168px; */
+
+
+
+}
+
+.benefits-title{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+  padding: 6px 0;
+}
+.benefits-list{
+ /* width: 344px;
+  height: 1271px;
+
+  margin-bottom: 16px; */
+  /* width: 344px; */
+/* height: 1271px; */
+/* new */
+display: flex;
+flex-direction: column;
+row-gap: 16px;
+width: 100%;
+justify-content: center;
+align-items: center;
+
+
+}
+.benefits-list-item{
+  background: #242527;
+  border-radius: 20px;
+  padding: 24px;
+  height: 270px;
+  margin-right: 16px;
+}
+.benefits-list-title{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-align: left;
+}
+.benefits-list-text{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  /* width: 296px; */
+  width: 100%;
+  height: 110px;
+}
+/* ------------------------------ */
+.order-the-project{
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  width: 187px;
+  height: 55px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+.order{
+  margin-top: 38px;
+  padding-bottom: 38px  ;
+  /* padding-left: 16px; */
+
+}
+}
+
+/* ------------ */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    width: 768px;
+}
+
+  .benefits-list-item {
+    /* width: calc((100% - 16px) / 2); */
+  }
+  .benefits{ 
+    background-color: #2110bb;
+  }
+
+  .benefits {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-color: #1e1823;
+    /* padding-left: 16px; */
+    /* width: 1168px; */
+  }
+  
+  .benefits-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
+    padding: 6px 0;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This will allow items to wrap to the next line */
+    row-gap: 16px;
+    justify-content: space-between; /* This will space items evenly */
+  }
+  
+  .benefits-list-item {
+    background: #242527;
+    border-radius: 20px;
+    padding: 24px;
+    height: 270px;
+    margin-right: 16px;
+    flex: 1 0 calc(50% - 16px); /* This will make each item take up 50% of the container width minus the margin */
+    box-sizing: border-box; /* This ensures padding is included in the width calculation */
+  }
+  
+  .benefits-list-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-align: left;
+  }
+  
+  .benefits-list-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    width: 100%;
+  height: 110px;
+}
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 0px;
+    width: 1280px;
+  }
+
+  .benefits {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-color: #1e1823;
+    /* padding-left: 16px; */
+    /* width: 1168px; */
+  }
+  
+  .benefits-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
+    padding: 6px 0;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This will allow items to wrap to the next line */
+    row-gap: 16px;
+    justify-content: space-between; /* This will space items evenly */
+  }
+  
+  .benefits-list-item {
+    background: #242527;
+    border-radius: 20px;
+    padding: 24px;
+    height: 270px;
+    margin-right: 16px;
+    flex: 1 0 calc(25% - 16px); /* This will make each item take up 25% of the container width minus the margin */
+    box-sizing: border-box; /* This ensures padding is included in the width calculation */
+  }
+  
+  .benefits-list-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    text-align: left;
+  }
+  
+  .benefits-list-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    width: 100%;
+    height: 110px;
+  }
+}
